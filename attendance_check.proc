@@ -1,0 +1,130 @@
+<form action="" method="post">
+    <table>
+        <tbody>
+            <tr>
+                <td>S.I</td>
+                <td>Roll No</td>
+                <td>Student Name</td>
+                <td>Attendance</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    123
+                    <input type="hidden" name="roll_no[]" value="123" />
+                </td>
+                <td>
+                    Raj Shekhar
+                    <input type="hidden" name="student_name[]" value="Raj Shekhar" />
+                </td>
+                <td>
+                    <label for="present0">
+                        <input type="radio" id="present0" name="attendance_status[0]" value="Present"> Present
+                    </label>
+                    <label for="absent0">
+                        <input type="radio" id="absent0" name="attendance_status[0]" value="Absent"> Absent
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    231
+                    <input type="hidden" name="roll_no[]" value="231" />
+                </td>
+                <td>
+                    Pankaj Kumar
+                    <input type="hidden" name="student_name[]" value="Pankaj Kumar" />
+                </td>
+                <td>
+                    <label for="present1">
+                        <input type="radio" id="present1" name="attendance_status[1]" value="Present"> Present
+                    </label>
+                    <label for="absent1">
+                        <input type="radio" id="absent1" name="attendance_status[1]" value="Absent"> Absent
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    345
+                    <input type="hidden" name="roll_no[]" value="345" />
+                </td>
+                <td>
+                    Amit Singh
+                    <input type="hidden" name="student_name[]" value="Amit Singh" />
+                </td>
+                <td>
+                    <label for="present2">
+                        <input type="radio" id="present2" name="attendance_status[2]" value="Present"> Present
+                    </label>
+                    <label for="absent2">
+                        <input type="radio" id="absent2" name="attendance_status[2]" value="Absent"> Absent
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    456
+                    <input type="hidden" name="roll_no[]" value="456" />
+                </td>
+                <td>
+                    Arjun Kumar
+                    <input type="hidden" name="student_name[]" value="Arjun Kumar" />
+                </td>
+                <td>
+                    <label for="present3">
+                        <input type="radio" id="present3" name="attendance_status[3]" value="Present"> Present
+                    </label>
+                    <label for="absent3">
+                        <input type="radio" id="absent3" name="attendance_status[3]" value="Absent"> Absent
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    567
+                    <input type="hidden" name="roll_no[]" value="567" />
+                </td>
+                <td>
+                    Amit Kumar
+                    <input type="hidden" name="student_name[]" value="Amit Kumar" />
+                </td>
+                <td>
+                    <label for="present4">
+                        <input type="radio" id="present4" name="attendance_status[4]" value="Present"> Present
+                    </label>
+                    <label for="absent4">
+                        <input type="radio" id="absent4" name="attendance_status[4]" value="Absent"> Absent
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>
+                    789
+                    <input type="hidden" name="roll_no[]" value="789" />
+                </td>
+                <td>
+                    Suraj Tiwari
+                    <input type="hidden" name="student_name[]" value="Suraj Tiwari" />
+                </td>
+                <td>
+                    <label for="present5">
+                        <input type="radio" id="present5" name="attendance_status[5]" value="Present"> Present
+                    </label>
+                    <label for="absent5">
+                        <input type="radio" id="absent5" name="attendance_status[5]" value="Absent"> Absent
+                    </label>
+                </td>
+            </tr>
+             
+        </tbody>
+    </table>
+     
+    <br/>
+    <input type="submit" name="submit" value="Mark Attendance" />
+</form>
