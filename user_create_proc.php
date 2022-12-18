@@ -13,17 +13,17 @@ $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $acct_type = $_POST['acct_type'];
 $status = $_POST['status'];
-if ($status!=1) {
+if ($status != 1) {
 	$status = 0;
 }
 $user_data = array(
 	//columname from table => value from post
-			"username" => $username, 
-			"password" => $hashed_password, 
-			"firstname" => $firstname,
-			"lastname" => $lastname, 
-			"acct_type" => $acct_type,
-			"status" => $status
+	"username" => $username,
+	"password" => $hashed_password,
+	"firstname" => $firstname,
+	"lastname" => $lastname,
+	"acct_type" => $acct_type,
+	"status" => $status
 );
 
 insert($user_data, $table_name);
@@ -31,5 +31,5 @@ header("Location: user_manage.php");
 $whoami = _get_username_from_id($_SESSION['id']);
 
 $text = "$whoami has successfully added a user.";
-		save_logs($text);
+save_logs($text);
 ?>

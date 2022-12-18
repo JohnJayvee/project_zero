@@ -11,7 +11,8 @@
 			<div class="alert alert-success">Your file was successfully uploaded!</div>
 
 			<p>
-				<a href="<?= base_url() ?>user_manage.php"><button type="button" class="btn btn-primary">Return to Manage Users Page</button></a>
+				<a href="<?= base_url() ?>user_manage.php"><button type="button" class="btn btn-primary">Return to
+						Manage Users Page</button></a>
 			</p>
 		</div>
 	</div><!--/span-->

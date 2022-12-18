@@ -1,6 +1,7 @@
 <?php include 'admin_header.php' ?>
 <h1 class="page-header">Students</h1>
 <!-- main content -->
+
 <body>
 	HELLO
 </body>
@@ -31,23 +32,25 @@
 
 <h1 class="page-header"><b>Students</b></h1>
 
-<h1><div class="well text-center">
-	<h2><label>NAME:&nbsp;<?= $fname." ".$mname." ".$lname ?></label>
-	<label>Year and Section:&nbsp;<?= $year_level." ".$section ?></label>
-	<label>Strand:&nbsp;<?= $strand ?></label>
-	<label>Gender:&nbsp;<?= $gender ?></label>
-	</h2>
-</div></h1>
-	<div class="box-content">
+<h1>
+	<div class="well text-center">
+		<h2><label>NAME:&nbsp;<?= $fname." ".$mname." ".$lname ?></label>
+			<label>Year and Section:&nbsp;<?= $year_level." ".$section ?></label>
+			<label>Strand:&nbsp;<?= $strand ?></label>
+			<label>Gender:&nbsp;<?= $gender ?></label>
+		</h2>
+	</div>
+</h1>
+<div class="box-content">
 	<?php } ?>
-	
+
 	<table border="2">
-	<thead>
-	<tr>
-		<th class="center">Attendance</th>
-		<th class="center">Date</th>
-		<th class="center">Edit</th>
-		</tr>
+		<thead>
+			<tr>
+				<th class="center">Attendance</th>
+				<th class="center">Date</th>
+				<th class="center">Edit</th>
+			</tr>
 		</thead>
 	</table>
-<?php include 'admin_footer.php' ?>
+	<?php include 'admin_footer.php' ?>

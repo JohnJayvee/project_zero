@@ -5,13 +5,13 @@ $table_name = "users";
 $id = $_GET['id'];
 $photo = "";
 
-$user_editedvalues = array (
+$user_editedvalues = array(
     //columname from table => value from post
-        "photo" => $photo
+    "photo" => $photo
 );
 
 update($user_editedvalues, $id, $table_name);
 
-header("Location: user_edit.php?id=".$id);
+header("Location: user_edit.php?id=" . $id);
 
 ?>
