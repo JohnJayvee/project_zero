@@ -23,8 +23,10 @@
 <footer>
 
 	<p>
-		<span style="text-align:left;float:left">&copy; 2018 <a href="http://themifycloud.com/downloads/janux-free-responsive-admin-dashboard-template/" alt="Bootstrap_Metro_Dashboard">CHECKED BY KARUSEL</a></span>
-		
+		<span style="text-align:left;float:left">&copy; 2018 <a
+				href="http://themifycloud.com/downloads/janux-free-responsive-admin-dashboard-template/"
+				alt="Bootstrap_Metro_Dashboard">CHECKED BY KARUSEL</a></span>
+
 	</p>
 
 </footer>
@@ -88,4 +90,5 @@
 <!-- end: JavaScript-->
 
 </body>
+
 </html>

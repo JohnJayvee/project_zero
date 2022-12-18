@@ -121,10 +121,10 @@
                     </label>
                 </td>
             </tr>
-             
+
         </tbody>
     </table>
-     
-    <br/>
+
+    <br />
     <input type="submit" name="submit" value="Mark Attendance" />
 </form>

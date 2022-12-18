@@ -2,15 +2,15 @@
 $sectionname = $_POST['sectionname'];
 $bilang = counting_rows($sectionname);
 
-if ( $bilang < 1){
+if ($bilang < 1) {
 
-get_tables('attendance_records','studid','studid','students',$sectionname);
+    get_tables('attendance_records', 'studid', 'studid', 'students', $sectionname);
 
-header("Location: attendance_chec.php");
+    header("Location: attendance_chec.php");
 
-}else{
+} else {
 
-header("Location: attendance_chec.php");
- }
+    header("Location: attendance_chec.php");
+}
 
 ?>
