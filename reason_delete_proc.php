@@ -2,7 +2,7 @@
 include "perfect_function.php";
 
 $submit = $_POST['submit'];
-if ($submit=='cancel') {
+if ($submit == 'cancel') {
 	header("Location: reason_manage.php");
 }
 
@@ -16,6 +16,6 @@ delete($id, $table_name);
 header("Location: reason_manage.php");
 $whoami = _get_username_by_id($_SESSION['id']);
 $text = "$whoami has successfully deleted a reason.";
-		save_logs($text);
+save_logs($text);
 
 ?>

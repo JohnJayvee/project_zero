@@ -1,20 +1,18 @@
 <style type="text/css">
-	
 	@media print {
 		#printPageButton {
 			display: none;
 		}
 	}
-
 </style>
 
 
-<?php include "admin_header_print.php"; 
+<?php include "admin_header_print.php";
 
 session_start();
 
 $id = $_GET['id'];
-$_SESSION['section_id']=$id;
+$_SESSION['section_id'] = $id;
 
 ?>
 
@@ -46,42 +44,48 @@ $_SESSION['section_id']=$id;
 							<th>Number of Lates</th>
 
 						</tr>
-					</thead>   
+					</thead>
 					<tbody>
-						<?php 
+						<?php
 
-				  		//get all records from users table
-						//$strand_data = get_join_student_attendance('students','attendance_records', 'studid','1',$id);
-						$student_data = get_where_section('students',$id);
-						foreach ($student_data as $key => $row) {
-							$id = $row['id'];
-							$studid=$row['studid'];
-							$fname = $row['fname'];
-							$lname = $row['lname'];
-
-
+                        //get all records from users table
+                        //$strand_data = get_join_student_attendance('students','attendance_records', 'studid','1',$id);
+                        $student_data = get_where_section('students', $id);
+                        foreach ($student_data as $key => $row) {
+	                        $id = $row['id'];
+	                        $studid = $row['studid'];
+	                        $fname = $row['fname'];
+	                        $lname = $row['lname'];
 
 
-						//$studid = get_studid_from_id(id)
-				  		// $edit_user_url = base_url().'strand_edit.php?id='.$id;
 
 
-							?>
-							<tr>
-								<td class="center"><?php echo  $fname." ".$lname; ?></td>
-								<?php
-								$absent = count_attendance(3,$studid);
-								$late = count_attendance(2,$studid);
-								?>
+	                        //$studid = get_studid_from_id(id)
+                        	// $edit_user_url = base_url().'strand_edit.php?id='.$id;
+                        
 
-								<td class="center"><?=  $absent ?></td>
-								<td class="center"><?= $late ?></td>
+                        ?>
+						<tr>
+							<td class="center">
+								<?php echo $fname . " " . $lname; ?>
+							</td>
+							<?php
+	                        $absent = count_attendance(3, $studid);
+	                        $late = count_attendance(2, $studid);
+                                ?>
+
+							<td class="center">
+								<?=$absent ?>
+							</td>
+							<td class="center">
+								<?= $late ?>
+							</td>
 							<?php } ?>
 
 						</tr>
 
 					</tbody>
-				</table> 
+				</table>
 			</div>
 		</div>
 	</div>
@@ -90,7 +94,7 @@ $_SESSION['section_id']=$id;
 
 
 <script type="text/javascript">
-	window.onload = function() { window.print(); }
+	window.onload = function () { window.print(); }
 </script>
 
 

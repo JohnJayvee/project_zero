@@ -2,7 +2,7 @@
 include "perfect_function.php";
 
 $submit = $_POST['submit'];
-if ($submit=='cancel') {
+if ($submit == 'cancel') {
 	header("Location: strand_manage.php");
 }
 
@@ -15,6 +15,6 @@ delete($id, $table_name);
 
 header("Location: section_manage.php");
 $text = "section has successfully deleted a section.";
-		save_logs($text);
+save_logs($text);
 
 ?>

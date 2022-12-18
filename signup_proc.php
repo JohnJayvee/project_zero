@@ -13,12 +13,12 @@ $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 
 $user_data = array(
-			"username" => $username, 
-			"password" => $hashed_password, 
-			"firstname" => $firstname,
-			"lastname" => $lastname, 
-			"acct_type" => 2,
-			"status" => 0
+	"username" => $username,
+	"password" => $hashed_password,
+	"firstname" => $firstname,
+	"lastname" => $lastname,
+	"acct_type" => 2,
+	"status" => 0
 );
 
 //add record to users table
@@ -40,10 +40,10 @@ insert($token_data, "tokens");
 $target_email = $email;
 $subject = 'ACCOUNT CONFIRMATION';
 $msg = 'This is a test message.  If you can read this then everything works.<br>';
-$msg.= 'Click the link to verify your account:<br><br>';
+$msg .= 'Click the link to verify your account:<br><br>';
 
 //creates a confirmation link
-$msg.= base_url().'confirm.php?token='.$token;
+$msg .= base_url() . 'confirm.php?token=' . $token;
 
 $headers = "From: cbabaranjr@gmail.com\r\n";
 $headers .= "Content-type: text/html; charset=\"UTF-8\"; format=flowed \r\n";
