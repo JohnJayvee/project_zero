@@ -1,4 +1,3 @@
-
 <?php include "admin_header.php"; ?>
 
 <h1 class="page-header"><b>Delete Student</b></h1>
@@ -16,19 +15,19 @@
 			</p>
 
 			<?php
-				//get user ID from URL
-				$id = $_GET['id']; 
-				$form_location = base_url()."student_delete_proc.php?id=".$id; 
-			?>
+            //get user ID from URL
+            $id = $_GET['id'];
+            $form_location = base_url() . "student_delete_proc.php?id=" . $id;
+            ?>
 			<form class="form-horizontal" method="post" action="<?= $form_location ?>">
-			  <fieldset>
-				<div class="control-group" style="height:200px;">
-					<button type="submit" name="submit" value="Yes - Delete Blog Entry" class="btn btn-success">Yes - Delete Student</button>
-					<button type="submit" name="submit" value="Cancel" class="btn btn-warning">Cancel</button>
-				</div>
-			  </fieldset>
-			</form> 
+				<fieldset>
+					<div class="control-group" style="height:200px;">
+						<button type="submit" name="submit" value="Yes - Delete Blog Entry" class="btn btn-success">Yes
+							- Delete Student</button>
+						<button type="submit" name="submit" value="Cancel" class="btn btn-warning">Cancel</button>
+					</div>
+				</fieldset>
+			</form>
 		</div>
 	</div><!--/span-->
 </div><!--/row-->
-
