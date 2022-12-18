@@ -1,31 +1,34 @@
-<?php include "admin_header.php"; 
+<?php include "admin_header.php";
 include "perfect_date.php";
 ?>
-<h1>HELLO, <?= _get_firstname_from_id($_SESSION['id']) ?></h1>
+<h1>HELLO, <?= _get_firstname_from_id($_SESSION['id']) ?>
+</h1>
 
 <h3>REPORTS!</h3>
 
 <h1 class="page-header">
-REPORTS
-	
+	REPORTS
+
 </h1>
 
 
 
 <?php
-	$msql_query ="select * from logs order by id DESC";
-	$log_data = custom_query($msql_query);
-	foreach ($log_data as $key => $row) {
-		$text = $row['text'];
-		$datetime = get_nice_date($row['datetime'],"full");
-			
+$msql_query = "select * from logs order by id DESC";
+$log_data = custom_query($msql_query);
+foreach ($log_data as $key => $row) {
+	$text = $row['text'];
+	$datetime = get_nice_date($row['datetime'], "full");
+
 ?>
 
 <div class="alert alert-info">
-<button type="button" class="close" data-dismiss="alert">x</button>
-<strong><?= $datetime ?></strong> <br>
-<?= $text ?>
-	
+	<button type="button" class="close" data-dismiss="alert">x</button>
+	<strong>
+		<?= $datetime ?>
+	</strong> <br>
+	<?= $text ?>
+
 
 </div>
 <?php
